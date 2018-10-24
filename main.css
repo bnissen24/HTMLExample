@@ -1,0 +1,39 @@
+div {
+	background-color: purple;
+}
+
+.div-holder {
+	background-color: transparent;
+}
+
+#div1, #div2 {
+	width: 200px;
+	height: 200px;
+	margin: 10px 5px;
+	padding: 15px;
+	background-color: red;
+}
+
+#div1 {
+	background-color: lightblue;
+}
+
+#div2 {
+	background-color: lightgreen;
+}
+
+#span1, #span2 {
+	width: 100px;
+	height: 100px;
+	margin: 10px 5px;
+	padding: 15px;
+}
+
+#span1 {
+	background-color: #3366FF;
+	color: #bfbfbf;
+}
+
+#span2 {
+	background-color: #33FF33;
+}
