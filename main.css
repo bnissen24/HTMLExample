@@ -1,9 +1,14 @@
+body, html {
+	position: relative;
+}
+
 div {
 	background-color: purple;
 }
 
 .div-holder {
 	background-color: transparent;
+	display:flex;
 }
 
 #div1, #div2 {
@@ -12,10 +17,20 @@ div {
 	margin: 10px 5px;
 	padding: 15px;
 	background-color: red;
+	transition: 0.5s all ease-in-out;
+	position: relative;
+	left: 0;
 }
 
 #div1 {
 	background-color: lightblue;
+}
+
+#div1:hover {
+	background-color: blue;
+	width: 400px;
+	border: 5px solid black;
+	left: 80px;
 }
 
 #div2 {
@@ -36,4 +51,66 @@ div {
 
 #span2 {
 	background-color: #33FF33;
+}
+
+.input-container {
+	background-color: transparent;
+    margin: 35px;
+    padding: 12px;
+    border: 1px solid #bfbfbbfb;
+    border-radius: 10px;
+}
+
+.input-container input {
+	border: 0;
+	width: 100%;
+}
+
+.input-container input:focus {
+	background-color: lightblue;
+	border: 0;
+}
+
+#list {
+	list-style: none;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+#list li:nth-child(even) {
+	background-color: #bfbfbf;
+}
+
+#list li:nth-child(odd) {
+	background-color: lightblue;
+}
+
+#list li:last-of-type {
+	padding-bottom: 25px;
+}
+
+#list li:first-of-type {
+	padding-top: 25px;
+}
+
+.modal {
+	height: 400px;
+	width: 400px;
+	background-color: #FF6666;
+	position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-container {
+	width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 100%;
+    background-image: url(https://i.imgur.com/1RdoC5W.jpg);
+    background-position: center;
+    background-size: cover;
 }
